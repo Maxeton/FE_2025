@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Clinic</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header id="top">
+    <nav class="navbar">
+      <a href="#top" class="logo"><img src="img/logo.png" alt="Logo"></a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <img src="img/lady.jpg" alt="Doctor">
+      </div>
+      <div class="hero-text">
+        <h1>Proffesional Developers<br>Health Care</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Enim unde voluptates perspiciatis praesentium velit. Placeat!</p>
+        <div class="icons">
+          <i class="fas fa-heartbeat"></i>
+          <i class="fas fa-stethoscope"></i>
+          <i class="fas fa-user-md"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-container">
+        <img src="img/tools.png" alt="Tools" class="tools-img">
+        <div class="about-text">
+          <h2>About Clinic</h2>
+          <ul>
+            <li><strong>Medical Consulting</strong> - Lorem ipsum dolor sit amet...</li>
+            <li><strong>Laboratory analysis</strong> - Lorem ipsum dolor sit amet...</li>
+            <li><strong>Diagnostics</strong> - Lorem ipsum dolor sit amet...</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>How we can help you</h2>
+      <div class="grid">
+        <div><img src="img/icons/oftalmology.jpg" alt=""><h3>Ophthalmology</h3><p>Lorem ipsum dolor sit amet...</p></div>
+        <div><img src="img/icons/dentistry.jpg" alt=""><h3>Dentistry</h3><p>Lorem ipsum dolor sit amet...</p></div>
+        <div><img src="img/icons/cardiology.jpg" alt=""><h3>Cardiology</h3><p>Lorem ipsum dolor sit amet...</p></div>
+        <div><img src="img/icons/pediatrics.jpg" alt=""><h3>Pediatrics</h3><p>Lorem ipsum dolor sit amet...</p></div>
+        <div><img src="img/icons/laboratory.jpg" alt=""><h3>Laboratory</h3><p>Lorem ipsum dolor sit amet...</p></div>
+        <div><img src="img/icons/radiology.jpg" alt=""><h3>Radiology</h3><p>Lorem ipsum dolor sit amet...</p></div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Our Special Offers</h2>
+      <div class="pricing-cards">
+        <div><h3>Allergy Check</h3><p>$255</p><ul><li>10 treatments</li><li>Tests</li></ul><button>Get Now</button></div>
+        <div><h3>Eye Checkup</h3><p>$108</p><ul><li>3 treatments</li><li>Tests</li></ul><button>Get Now</button></div>
+        <div><h3>Dental Care</h3><p>$320</p><ul><li>6 treatments</li><li>Hygiene</li></ul><button>Get Now</button></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-form">
+        <img src="img/contact_image.jpg" alt="Doctor">
+        <form>
+          <h2>Make An Appointment</h2>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Phone" required>
+          <input type="date" required>
+          <input list="subjects" placeholder="Subject">
+          <datalist id="subjects">
+            <option value="Dentistry">
+            <option value="Cardiology">
+            <option value="Radiology">
+          </datalist>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2021</p>
+  </footer>
+
+  <a href="#top" class="scroll-up">↑</a>
+</body>
+</html>

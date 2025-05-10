@@ -1,0 +1,298 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* NAVIGATION */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 40px 60px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.icons i {
+  font-size: 28px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* ABOUT SECTION */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+.tools-img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text ul {
+  list-style: none;
+}
+
+.about-text li {
+  margin-bottom: 0.5rem;
+}
+
+/* SERVICES SECTION */
+#services {
+  background: #e9f9fc;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.grid div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.grid div:hover {
+  transform: translateY(-5px);
+}
+
+.grid img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.grid h3 {
+  margin: 10px 0 5px;
+}
+
+/* PRICING SECTION */
+#pricing {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.pricing-cards div {
+  background: #25c2f2;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pricing-cards h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.pricing-cards p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.pricing-cards ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.pricing-cards button {
+  background: white;
+  color: #25c2f2;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.pricing-cards button:hover {
+  background: #f0f0f0;
+}
+
+/* CONTACT SECTION */
+#contact {
+  background: #e9f9fc;
+  padding: 60px 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.contact-form img {
+  max-width: 300px;
+  width: 100%;
+}
+
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+form input, form button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 15px;
+}
+
+/* SCROLL UP */
+.scroll-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #007bff;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* MEDIA */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
